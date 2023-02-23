@@ -8,7 +8,7 @@ RUN addgroup -g 1000 httpenv \
 COPY --from=0 --chown=httpenv:httpenv /go/httpenv /httpenv
 EXPOSE 8888
 
-RUN echo "test"
+RUN echo "test 2"
 # we're not changing user in this example, but you could:
 # USER httpenv
 CMD ["/httpenv"]
